@@ -84,4 +84,49 @@
 // }
 
 // console.log(atTheOldToad.getPotions()); // "List of all available potions"
-// console.log(atTheOldToad.addPotion("Invisibility")); // "Adding Invisibility"  
+// console.log(atTheOldToad.addPotion("Invisibility")); // "Adding Invisibility"
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return "List of all available potions";
+//   },
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     this.potions.push(potionName);
+//     return `Adding ${potionName}`;
+//   },
+// };
+// console.log(atTheOldToad.getPotions()); // "List of all available potions"
+// console.log(atTheOldToad.addPotion("Invisibility")); // "Adding Invisibility"
+
+// Об'єкт atTheOldToad має наступні властивості:
+
+// potions — масив рядків, з назвами зілль
+// getPotions() — метод, який повертає значення властивості potions
+// addPotion() — метод, який приймає параметр рядок з назвою зілля potionName
+// Зміни код методу addPotion(potionName) так, щоб він додавав зілля potionName в кінець масиву у властивості potions.
+
+// Оголошена змінна atTheOldToad
+// Значення змінної atTheOldToad - це об'єкт
+// Значення властивості potions - це масив ["Speed potion", "Stone skin"]
+// Значення властивості getPotions - це метод об'єкта
+// Значення властивості addPotion - це метод об'єкта
+// Виклик методу atTheOldToad.getPotions() повертає поточне значення властивості potions
+// Після виклику методу atTheOldToad.addPotion("Invisibility"), у властивості potions буде масив ["Speed potion", "Stone skin", "Invisibility"]
+// Після виклику методу atTheOldToad.addPotion("Power potion"), у властивості potions буде масив["Speed potion", "Stone skin", "Invisibility", "Power potion"]
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Stone skin"],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(potionName) {
+//     this.potions.push(potionName);
+//     return `Adding ${potionName}`;
+//   },
+// };
+
+
